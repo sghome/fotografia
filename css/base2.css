@@ -5,7 +5,7 @@
 }
 
 :root {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 html, body {
@@ -28,15 +28,75 @@ body {
 	font-family: halyard-display, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+
+	--color-text: #a5a5a5;
+
+	--color-text-circle-1: #48423c;
+	--color-text-circle-2: #48423c;
+	--color-text-circle-3: #48423c;
+	--color-text-circle-4: #48423c;
+	--font-circle-1: ivymode, sans-serif;
+	--font-weight-circle-1: 300;
+	--font-circle-2: modesto-condensed, serif;
+	--font-weight-circle-2: 400;
+	--font-circle-3: minerva-modern, sans-serif;
+	--font-weight-circle-3: 400;
+	--font-circle-4: niagara, serif;
+	--font-weight-circle-4: 300;
+	--color-button: #d6ae7c;
+	--color-text-button: #1d1812;
+
+	--dim-button: 90px;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: tenon, sans-serif;
+	
+
+
 }
 
+
+
+
+
 /* Page Loader */
-.js .loading::before,
-.js .loading::after {
+.js body::before,
+.js body::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+	transition: opacity 0.3s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.js body::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js body::after {
+	content: 'Loading';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	line-height: 1;
+	color: var(--color-link);
+
 	content: '';
 	position: fixed;
 	z-index: 1000;
 }
+
 
 .js .loading::before {
 	top: 0;
@@ -47,6 +107,9 @@ body {
 }
 
 .js .loading::after {
+	
+	pointer-events: auto;
+
 	top: 50%;
 	left: 50%;
 	width: 60px;
@@ -56,8 +119,22 @@ body {
 	opacity: 0.4;
 	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-
 }
+
+
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	
+}
+
+
+
+
+
+
+
 
 @keyframes loaderAnim {
 	to {
@@ -243,6 +320,69 @@ main {
 						'desc desc';
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.enter {
+	display: block;
+	border: 0;
+	width: var(--dim-button);
+	height: var(--dim-button);
+	position: absolute;
+	left: calc(50% - var(--dim-button) / 2 );
+	top: calc(50% - var(--dim-button) / 2 );
+	font: inherit;
+	font-weight: 500;
+	cursor: pointer;
+	background: none;
+	color: var(--color-text-button);
+	padding: 0;
+}
+
+.enter:focus,
+.enter:hover,
+.enter:active {
+	outline: none;
+}
+
+.enter__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: var(--color-button);
+}
+
+.enter__text {
+	position: relative;
+}
+
+.js .enter {
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .article--current {
 	opacity: 1;
