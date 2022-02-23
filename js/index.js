@@ -1,4 +1,4 @@
-import { preloadImages } from './utils2';
+import { preloadImages } from './utils';
 import { gsap } from 'gsap';
 import { TypeTransition } from './typeTransition';
 import { Item } from './item';
