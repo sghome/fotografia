@@ -11,13 +11,13 @@
 body {
 	margin: 0;
 	--color-text: #a5a5a5;
-	--color-bg: #191613;
-	--color-link: #d6af7c;
+	--color-bg: #412f34;
+	--color-link: #aa1c3c;
 	--color-link-hover: #fff;
-	--color-text-circle-1: #48423c;
-	--color-text-circle-2: #48423c;
-	--color-text-circle-3: #48423c;
-	--color-text-circle-4: #48423c;
+	--color-text-circle-1: #85152e;
+	--color-text-circle-2: #85152e;
+	--color-text-circle-3: #85152e;
+	--color-text-circle-4: #85152e;
 	--font-circle-1: ivymode, sans-serif;
 	--font-weight-circle-1: 300;
 	--font-circle-2: modesto-condensed, serif;
@@ -26,8 +26,8 @@ body {
 	--font-weight-circle-3: 400;
 	--font-circle-4: niagara, serif;
 	--font-weight-circle-4: 300;
-	--color-button: #8c374a;
-	--color-text-button: #c82f51;
+	--color-button: #aa1c3c;
+	--color-text-button: #c27d8e;
 	--dim-button: 90px;
 	color: var(--color-text);
 	background-color: var(--color-bg);

@@ -15,13 +15,13 @@ html, body {
 
 body {
 	margin: 0;
-	--color-text: #000;
-	--color-text-alt: #000;
-	--color-bg: #de5f40;
-	--color-link: #000;
-	--color-link-hover: #000;
-	--color-link-alt: #000;
-	--color-type: #000;
+	--color-text: #85152e;
+	--color-text-alt: #85152e;
+	--color-bg: #000000;
+	--color-link: #85152e;
+	--color-link-hover: #85152e;
+	--color-link-alt: #85152e;
+	--color-type: #85152e;
 	--type-line-opacity: 0.05;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -306,7 +306,7 @@ main {
     left: 0;
     opacity: 0;
     pointer-events: none;
-    stroke: #000;
+    stroke: #85152e;
     z-index: 1000;
     cursor: pointer;
     width: 50px;
@@ -319,7 +319,7 @@ main {
 .back:hover,
 .back:focus {
 	outline: none;
-	stroke: #823725;
+	stroke: #aa1c3c;
 }
 
 @media screen and (min-width: 53em) {
