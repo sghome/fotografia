@@ -26,8 +26,8 @@ body {
 	--font-weight-circle-3: 400;
 	--font-circle-4: niagara, serif;
 	--font-weight-circle-4: 300;
-	--color-button: #d6ae7c;
-	--color-text-button: #1d1812;
+	--color-button: #8c374a;
+	--color-text-button: #c82f51;
 	--dim-button: 90px;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -36,49 +36,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.demo-2 {
-	--color-text: #a5a5a5;
-	--color-bg: #000000;
-	--color-link: #ea34a6;
-	--color-link-hover: #fff;
-	--color-font-circle: #7b7772;
-	--color-button: #ea34a6;
-	--color-text-button: #000000;
-	--color-text-circle-1: #ea34a6;
-	--color-text-circle-2: #422163;
-	--color-text-circle-3: #212044;
-	--color-text-circle-4: #292725;
-	--font-circle-1: niagara, serif;
-	--font-weight-circle-1: 300;
-	--font-circle-2: ambroise-firmin-std, serif;
-	--font-weight-circle-2: 300;
-	--font-circle-3: modesto-condensed, serif;
-	--font-weight-circle-3: 400;
-	--font-circle-4: niagara, serif;
-	--font-weight-circle-4: 300;
-}
 
-.demo-3 {
-	--color-text: #292725;
-	--color-bg: #dad4d1;
-	--color-link: #a99c90;
-	--color-link-hover: #292725;
-	--color-font-circle: #7b7772;
-	--color-button: #a99c90;
-	--color-text-button: #272524;
-	--color-text-circle-1: #272524;
-	--color-text-circle-2: #272524;
-	--color-text-circle-3: #272524;
-	--color-text-circle-4: #272524;
-	--font-circle-1: modesto-condensed, serif;
-	--font-weight-circle-1: 400;
-	--font-circle-2: ambroise-firmin-std, serif;
-	--font-weight-circle-2: 300;
-	--font-circle-3: modesto-condensed, serif;
-	--font-weight-circle-3: 400;
-	--font-circle-4: niagara, sans-serif;
-	--font-weight-circle-4: 300;
-}
 
 /* Page Loader */
 .js body::before,
